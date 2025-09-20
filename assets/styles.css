@@ -1,0 +1,41 @@
+:root{
+  --bg-light: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --muted: #6c757d;
+  --primary: #0d6efd;
+}
+body.dark-mode{
+  background-color:#0b0f14;
+  color:#e6edf3;
+}
+body{background:var(--bg-light);color:var(--text-color);font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+.card{border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+.navbar .nav-link{color:rgba(255,255,255,0.9);}
+.footer{padding:12px 0;color:var(--muted);text-align:center;margin-top:40px;}
+.table-responsive{overflow-x:auto;}
+.btn-icon{display:inline-flex;align-items:center;gap:8px;}
+img.img-thumb{border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+
+/* dark mode overrides */
+body.dark-mode .card{background:#13171b;color:#e6edf3;box-shadow:0 6px 24px rgba(0,0,0,0.5);}
+body.dark-mode .navbar{background:#0d0f12!important;}
+body.dark-mode .table{color:#e6edf3;}
+body.dark-mode a{color:#89b4ff;}
+@media (max-width:576px){
+  .btn-responsive{width:100%;margin-bottom:8px;}
+}
+
+/* Brand color override */
+:root {
+  --bs-primary: #0066cc;
+}
+.btn-primary {
+  background-color:#0066cc;
+  border-color:#0066cc;
+}
+.btn-primary:hover {
+  background-color:#005bb5;
+  border-color:#005bb5;
+}
+.navbar-dark .navbar-brand { font-weight:bold; }
